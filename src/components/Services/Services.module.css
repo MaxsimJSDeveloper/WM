@@ -1,0 +1,19 @@
+.container {
+  background-color: #91bf65;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.list {
+  list-style: "- ";
+}
+
+.item {
+  margin-bottom: 12px;
+}
+
+.item:nth-child(odd) {
+  color: #2c5c00;
+  padding: 8px;
+  border-radius: 8px;
+}

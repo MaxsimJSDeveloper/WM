@@ -9,7 +9,7 @@ const Navigation = ({ onLinkClick }: NavigationProps) => {
     <div>
       <ul>
         <li className={css.link}>
-          <a href="#" onClick={onLinkClick}>
+          <a href="#serv" onClick={onLinkClick}>
             Послуги
           </a>
         </li>

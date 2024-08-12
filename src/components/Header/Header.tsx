@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Modal, Box, IconButton } from "@mui/material";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-import css from "./Header.module.css";
 import CloseIcon from "@mui/icons-material/Close";
 import Navigation from "../Navigation/Navigation";
 
@@ -13,8 +12,11 @@ const Header = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <header className={css.head}>
-      <RxHamburgerMenu onClick={handleOpen} />
+    <header>
+      <RxHamburgerMenu
+        style={{ width: 26, height: 26, color: "#234800" }}
+        onClick={handleOpen}
+      />
       <Modal
         open={open}
         onClose={handleClose}

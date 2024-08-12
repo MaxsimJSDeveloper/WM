@@ -1,0 +1,11 @@
+.icon {
+  width: 28px;
+  height: 28px;
+  color: #234800;
+}
+
+.container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
