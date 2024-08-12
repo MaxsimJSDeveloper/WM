@@ -1,4 +1,5 @@
 import Contacts from "../Contacts/Contacts";
+import Links from "../Links/Links";
 import Services from "../Services/Services";
 import css from "./Profile.module.css";
 
@@ -26,6 +27,7 @@ const Profile = () => {
         Лікар, який досконало знає страхи батьків та потреби немовлят
       </p>
       <Services />
+      <Links />
     </div>
   );
 };

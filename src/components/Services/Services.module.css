@@ -2,6 +2,7 @@
   background-color: #91bf65;
   padding: 16px;
   border-radius: 12px;
+  margin-bottom: 16px;
 }
 
 .list {
@@ -14,6 +15,4 @@
 
 .item:nth-child(odd) {
   color: #2c5c00;
-  padding: 8px;
-  border-radius: 8px;
 }

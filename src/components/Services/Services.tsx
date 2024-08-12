@@ -20,13 +20,12 @@ const Services = () => {
           Заключу декларацію з свідомими людьми міста Харків та передмістя.
           Контакти нижче:
           <p style={{ marginTop: 6 }}>
-            <FaPhoneAlt style={{ color: "#bccdac" }} /> ‌+38(099) 915 10 40
+            <FaPhoneAlt style={{ color: "#bccdac" }} /> +38(099) 915 10 40
           </p>
           <p>
             <FaMapMarkerAlt style={{ color: "#bccdac" }} /> м.Харків пр.Людвіга
             Свободи, 31
           </p>
-          ‌
         </li>
         <li className={css.item}>
           Щомісячно огляну і надам консультацію щодо здоров’я твого малюка
