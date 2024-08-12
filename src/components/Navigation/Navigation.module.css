@@ -1,0 +1,10 @@
+.link {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #91bf65;
+  font-size: 24px;
+}
+
+.link:hover {
+  color: #6c9247;
+}
