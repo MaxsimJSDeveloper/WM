@@ -4,7 +4,7 @@ import { MdFace3 } from "react-icons/md";
 
 const Links = () => {
   return (
-    <div>
+    <div id="links">
       <h2 className={styles.title}>Links</h2>
       <ul className={styles.list}>
         <li className={styles.listItem}>

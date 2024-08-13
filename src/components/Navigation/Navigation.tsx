@@ -14,7 +14,7 @@ const Navigation = ({ onLinkClick }: NavigationProps) => {
           </a>
         </li>
         <li className={css.link}>
-          <a href="#" onClick={onLinkClick}>
+          <a href="#links" onClick={onLinkClick}>
             Посилання
           </a>
         </li>

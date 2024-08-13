@@ -7,8 +7,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.04em;
   color: #ededed;
-  background-color: #002a3e;
-  background: url("/img/bgImg.webp");
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-green-leafy-background-poster-leafleafposterbeautifulsimplewomens-clothingadflash-image_62150.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -34,8 +33,9 @@ ul {
 }
 
 a {
-  color: currentColor;
+  cursor: pointer;
   text-decoration: none;
+  color: inherit;
 }
 
 button {
@@ -46,10 +46,4 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-input:focus {
-  border: 1px solid #00778b;
-  outline: none;
-  caret-color: #00778b;
 }

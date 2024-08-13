@@ -14,7 +14,15 @@ const Header = () => {
   return (
     <header>
       <RxHamburgerMenu
-        style={{ width: 26, height: 26, color: "#234800" }}
+        style={{
+          width: 42,
+          height: 42,
+          color: "#fff",
+          backgroundColor: "#91bf65",
+          padding: 6,
+          borderRadius: 6,
+          position: "fixed",
+        }}
         onClick={handleOpen}
       />
       <Modal
