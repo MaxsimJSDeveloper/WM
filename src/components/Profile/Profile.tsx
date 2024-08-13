@@ -10,7 +10,7 @@ const Profile = () => {
         style={{ marginBottom: 8 }}
         width={300}
         height={600}
-        src="../img/profile.png"
+        src="../../img/profile.png"
       ></img>
       <p style={{ marginBottom: 5, color: "#6c9247" }}>@dr_iryna_ivanivna</p>
       <Contacts />
