@@ -12,7 +12,7 @@ const Profile = () => {
         height={600}
         src="../../img/profile.png"
       ></img>
-      <p style={{ marginBottom: 5, color: "#6c9247" }}>@dr_iryna_ivanivna</p>
+      <p style={{ marginBottom: 5, color: "#6c9247" }}>@dr_iryna_holovko</p>
       <Contacts />
       <p
         style={{

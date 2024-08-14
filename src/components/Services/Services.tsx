@@ -30,7 +30,7 @@ const Services = () => {
 
   return (
     <div className={css.container} id="serv">
-      <h2 style={{ textAlign: "center", marginBottom: 12 }}>Мої послуги</h2>
+      <h2 style={{ textAlign: "center", marginBottom: 12 }}>Послуги</h2>
       <ul className={css.list} ref={ref}>
         {trail.map((props, index) => (
           <animated.li key={index} className={css.item} style={props}>
