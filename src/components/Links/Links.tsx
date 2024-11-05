@@ -4,8 +4,10 @@ import { MdFace3 } from "react-icons/md";
 
 const Links = () => {
   return (
-    <div id="links">
-      <h2 className={styles.title}>Посилання</h2>
+    <section id="links" aria-labelledby="links-title">
+      <h2 id="links-title" className={styles.title}>
+        Посилання
+      </h2>
       <ul className={styles.list}>
         <li className={styles.listItem}>
           <div className={styles.info}>
@@ -15,9 +17,11 @@ const Links = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLScxMfOuDroT_ZT5xYwU_YaANrEH6FuhZQFoCT9YG-UMwIA09A/viewform"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Заповнити анкету 'Моя рука допомоги'"
             >
               <div className={styles.cardInfo}>
-                Заповни анкету <p className={styles.text}>Моя рука допомоги</p>
+                Заповни анкету
+                <p className={styles.text}>Моя рука допомоги</p>
               </div>
             </a>
           </div>
@@ -30,6 +34,7 @@ const Links = () => {
               href="https://forms.gle/whQZko9yqWMk1tmeA"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Запис на безкоштовне заняття для вагітних"
             >
               <div className={styles.cardInfo}>
                 ВАГІТНИМ
@@ -39,7 +44,7 @@ const Links = () => {
           </div>
         </li>
       </ul>
-    </div>
+    </section>
   );
 };
 

@@ -26,11 +26,22 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
   if (!modalRoot) return null;
 
   return ReactDOM.createPortal(
-    <div className={css.modalOverlay} onClick={onClose}>
+    <div
+      className={css.modalOverlay}
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
       <div className={css.modalContent} onClick={(e) => e.stopPropagation()}>
-        <button className={css.modalClose} onClick={onClose}>
+        <button
+          className={css.modalClose}
+          onClick={onClose}
+          aria-label="Закрити модальне вікно"
+        >
           <IoMdClose className={css.icon} />
         </button>
+        <h2 className="visuallyHidden">Заголовок модального окна</h2>
         {children}
       </div>
     </div>,

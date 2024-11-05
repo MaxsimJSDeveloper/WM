@@ -22,8 +22,9 @@
   color: #2c5c00;
 }
 
-.link {
+.links {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 12px;
 }

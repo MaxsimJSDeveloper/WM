@@ -6,7 +6,7 @@ interface NavigationProps {
 
 const Navigation = ({ onLinkClick }: NavigationProps) => {
   return (
-    <nav>
+    <nav aria-label="Основне меню">
       <ul className={css.navList}>
         <li className={css.link}>
           <a href="#serv" onClick={onLinkClick}>
@@ -19,7 +19,7 @@ const Navigation = ({ onLinkClick }: NavigationProps) => {
           </a>
         </li>
         <li className={css.link}>
-          <a href="#" onClick={onLinkClick}>
+          <a href="#" onClick={onLinkClick} aria-label="Підтримати проєкт">
             Підтримати проект
           </a>
         </li>
