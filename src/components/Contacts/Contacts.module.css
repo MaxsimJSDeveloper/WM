@@ -1,16 +1,29 @@
-.icon {
-  width: 28px;
-  height: 28px;
-  color: #234800;
-}
-
 .container {
   display: flex;
   justify-content: center;
-  padding: 8px;
+  padding: 12px;
   gap: 16px;
   margin-bottom: 16px;
   background-color: #91bf65;
   width: 90%;
   border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  color: #234800;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  color: #2c5c00;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

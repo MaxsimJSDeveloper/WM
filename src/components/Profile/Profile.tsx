@@ -7,23 +7,13 @@ const Profile = () => {
   return (
     <div className={css.container}>
       <img
-        style={{ marginBottom: 8 }}
-        width={300}
-        height={600}
+        className={css.profileImage}
         src="../../img/profile.png"
-      ></img>
-      <p style={{ marginBottom: 5, color: "#6c9247" }}>@dr_iryna_holovko</p>
+        alt="Профильное изображение"
+      />
+      <p className={css.username}>@dr_iryna_holovko</p>
       <Contacts />
-      <p
-        style={{
-          textTransform: "uppercase",
-          color: "#6c9247",
-          fontStyle: "italic",
-          fontSize: 18,
-          textAlign: "center",
-          marginBottom: 12,
-        }}
-      >
+      <p className={css.description}>
         Лікар, який досконало знає страхи батьків та потреби немовлят
       </p>
       <Services />

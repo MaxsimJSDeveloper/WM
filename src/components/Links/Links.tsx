@@ -25,7 +25,6 @@ const Links = () => {
         <li className={styles.listItem}>
           <div className={styles.info}>
             <MdFace3 className={styles.icon} />
-
             <a
               className={styles.link}
               href="https://forms.gle/whQZko9yqWMk1tmeA"

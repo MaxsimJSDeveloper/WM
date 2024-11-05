@@ -30,26 +30,26 @@ const Services = () => {
 
   return (
     <div className={css.container} id="serv">
-      <h2 style={{ textAlign: "center", marginBottom: 12 }}>Послуги</h2>
+      <h2 className={css.title}>Послуги</h2>
       <ul className={css.list} ref={ref}>
         {trail.map((props, index) => (
           <animated.li key={index} className={css.item} style={props}>
             {services[index]}
             {index === 3 && (
               <>
-                <p style={{ marginTop: 6 }}>
-                  <FaPhoneAlt style={{ color: "#bccdac" }} /> +38(099) 915 10 40
+                <p className={css.contact}>
+                  <FaPhoneAlt className={css.icon} /> +38(099) 915 10 40
                 </p>
-                <p>
-                  <FaMapMarkerAlt style={{ color: "#bccdac" }} /> м.Харків
-                  пр.Людвіга Свободи, 31
+                <p className={css.contact}>
+                  <FaMapMarkerAlt className={css.icon} /> м.Харків, пр.Людвіга
+                  Свободи, 31
                 </p>
               </>
             )}
           </animated.li>
         ))}
       </ul>
-      <i style={{ color: "#234800" }}>Зростимо разом здорових малюків!</i>
+      <i className={css.motto}>Зростимо разом здорових малюків!</i>
     </div>
   );
 };

@@ -2,25 +2,29 @@
   color: #6c9247;
   margin-bottom: 12px;
   text-align: center;
+  font-size: 24px;
+  transition: color 0.3s ease;
 }
 
 .list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
-  flex-wrap: wrap;
-  width: 90%;
+  display: grid;
   gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .listItem {
   background-color: #91bf65;
   border-radius: 8px;
-  box-sizing: border-box;
   margin-bottom: 12px;
-  padding: 8px;
-  width: 400px;
+  padding: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.listItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .info {
@@ -32,11 +36,17 @@
 .icon {
   height: 48px;
   width: 48px;
-  margin-right: auto;
+  margin-right: 16px;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
 }
 
 .link {
-  margin-right: auto;
+  text-decoration: none;
+  color: inherit;
 }
 
 .cardInfo {
@@ -50,4 +60,9 @@
 .text {
   color: #d8d8d8;
   font-size: 14px;
+  transition: color 0.3s;
+}
+
+.listItem:hover .text {
+  color: #ffffff;
 }
