@@ -1,13 +1,13 @@
 import css from "./Navigation.module.css";
 
 interface NavigationProps {
-  onLinkClick: () => void;
+  onLinkClick?: () => void;
 }
 
 const Navigation = ({ onLinkClick }: NavigationProps) => {
   return (
-    <div>
-      <ul>
+    <nav>
+      <ul className={css.navList}>
         <li className={css.link}>
           <a href="#serv" onClick={onLinkClick}>
             Послуги
@@ -24,7 +24,7 @@ const Navigation = ({ onLinkClick }: NavigationProps) => {
           </a>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
