@@ -44,25 +44,6 @@
   transform: scale(1.1);
 }
 
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.cardInfo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 18px;
-}
-
-.text {
-  color: #d8d8d8;
-  font-size: 14px;
-  transition: color 0.3s;
-}
-
 .listItem:hover .text {
   color: #ffffff;
 }

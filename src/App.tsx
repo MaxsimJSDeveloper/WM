@@ -1,10 +1,10 @@
-import Header from "./components/Header/Header";
+// import Header from "./components/Header/Header";
 import Profile from "./components/Profile/Profile";
 
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Profile />
     </>
   );

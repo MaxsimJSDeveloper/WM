@@ -8,6 +8,10 @@ import css from "./Profile.module.css";
 const Profile = () => {
   return (
     <div className={css.container}>
+      <h1 className={css.description}>
+        Ментор <br />
+        твого материнства
+      </h1>
       <img
         style={{ marginBottom: 8 }}
         width={300}
@@ -17,9 +21,6 @@ const Profile = () => {
         alt="Фото лікаря Ірини Головко"
       />
       <p className={css.username}>@dr_iryna_holovko</p>
-      <h1 className={css.description}>
-        Лікар, який досконало знає страхи батьків та потреби немовлят
-      </h1>
       <Contacts />
       <Services />
       <Links />

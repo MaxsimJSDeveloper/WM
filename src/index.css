@@ -1,25 +1,51 @@
+:root {
+  --font-family: "Open Sans", sans-serif;
+  --second-family: "Caveat", sans-serif;
+  --content-color: #e5e5e5;
+  --bg-color: #b2dfdb;
+  --card-color: #009688;
+  --accent-color: #00796b;
+  --radius: 12px;
+}
+
 * {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("./fonts/Montserrat-Regular.woff2") format("woff2"),
-    url("./fonts/Montserrat-Regular.woff") format("woff");
+  font-family: "Open Sans";
+  src: url("./fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("./fonts/OpenSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Caveat";
+  src: url("./fonts/Caveat-Bold.woff2") format("woff2"),
+    url("./fonts/Caveat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("./fonts/Caveat-Medium.woff2") format("woff2"),
+    url("./fonts/Caveat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   letter-spacing: 0.04em;
   color: #ededed;
-  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-green-leafy-background-poster-leafleafposterbeautifulsimplewomens-clothingadflash-image_62150.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--bg-color);
 }
 
 h1,

@@ -1,6 +1,7 @@
 import { TbChecklist } from "react-icons/tb";
 import styles from "./Links.module.css";
 import { MdFace3 } from "react-icons/md";
+import Link from "../Link/Link";
 
 const Links = () => {
   return (
@@ -12,35 +13,31 @@ const Links = () => {
         <li className={styles.listItem}>
           <div className={styles.info}>
             <TbChecklist className={styles.icon} />
-            <a
-              className={styles.link}
-              href="https://docs.google.com/forms/d/e/1FAIpQLScxMfOuDroT_ZT5xYwU_YaANrEH6FuhZQFoCT9YG-UMwIA09A/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Заповнити анкету 'Моя рука допомоги'"
-            >
-              <div className={styles.cardInfo}>
-                Заповни анкету
-                <p className={styles.text}>Моя рука допомоги</p>
-              </div>
-            </a>
+            <Link
+              link="https://docs.google.com/forms/d/e/1FAIpQLScxMfOuDroT_ZT5xYwU_YaANrEH6FuhZQFoCT9YG-UMwIA09A/viewform"
+              title="Заповни анкету"
+              subtitle="Моя рука допомоги"
+            />
           </div>
         </li>
         <li className={styles.listItem}>
           <div className={styles.info}>
             <MdFace3 className={styles.icon} />
-            <a
-              className={styles.link}
-              href="https://forms.gle/whQZko9yqWMk1tmeA"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Запис на безкоштовне заняття для вагітних"
-            >
-              <div className={styles.cardInfo}>
-                ВАГІТНИМ
-                <p className={styles.text}>запис на безкоштовне заняття</p>
-              </div>
-            </a>
+            <Link
+              link="https://forms.gle/whQZko9yqWMk1tmeA"
+              title="ВАГІТНИМ"
+              subtitle="запис на безкоштовне заняття"
+            />
+          </div>
+        </li>
+        <li className={styles.listItem}>
+          <div className={styles.info}>
+            <MdFace3 className={styles.icon} />
+            <Link
+              link="https://radiologycenter.eu/doctors/golovkoirinaivanivna"
+              title="Про мене"
+              subtitle="Досвід роботи та освіта"
+            />
           </div>
         </li>
       </ul>
