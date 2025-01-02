@@ -2,6 +2,7 @@ import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { useTrail, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
 import css from "./Services.module.css";
+import Title from "../../shared/Title/Title";
 
 const Services = () => {
   const services = [
@@ -30,7 +31,7 @@ const Services = () => {
 
   return (
     <section className={css.container} id="serv">
-      <h2 className={css.title}>Послуги</h2>
+      <Title>Послуги</Title>
       <ul className={css.list} ref={ref}>
         {trail.map((props, index) => (
           <animated.li key={index} className={css.item} style={props}>

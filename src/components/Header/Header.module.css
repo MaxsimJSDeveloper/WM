@@ -1,13 +1,35 @@
 .header {
-  background-color: #91bf65;
+  background-color: rgb(0, 121, 107);
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 70px;
   margin-bottom: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.whenScroll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--content-color);
 }
 
 .menuButton {
-  background-color: inherit;
+  background-color: rgb(0, 121, 107);
   border: none;
 }

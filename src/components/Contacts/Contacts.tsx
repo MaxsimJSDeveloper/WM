@@ -1,49 +1,47 @@
-import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
-import { FiYoutube } from "react-icons/fi";
-import { LiaTelegram } from "react-icons/lia";
 import css from "./Contacts.module.css";
+import Icon from "../../shared/Icon/Icon";
+import IconsLink from "../../shared/IconsLink/IconsLink";
 
 const Contacts = () => {
   return (
     <div className={css.container} aria-label="Контакти">
-      <h2 className="visuallyHidden">Зв'язатися з нами</h2>
+      <h2 className="visuallyHidden">Зв'язатися зі мною</h2>
       <div className={css.links}>
-        <a
-          href="https://www.instagram.com/dr_iryna_holovko?igsh=MXBpbzJtN3A3Z2VrNg=="
-          target="_blank"
-          rel="noopener noreferrer"
-          className={css.link}
-          aria-label="Перейти до Instagram"
+        <IconsLink link="https://www.instagram.com" alt="Instagram">
+          <Icon id="icon-instagram" fill="#E5E5E5" />
+        </IconsLink>
+
+        <IconsLink link="https://t.me/+oKBOKPanjRM0YTJi" alt="Telegram">
+          <Icon id="icon-telegram" fill="#E5E5E5" />
+        </IconsLink>
+
+        <IconsLink
+          link="https://www.youtube.com/channel/UC7AHTcnBk-MZ5B7tTq81KpQ"
+          alt="YouTube"
         >
-          <FaInstagram className={css.icon} />
-        </a>
-        <a
-          href="https://t.me/+oKBOKPanjRM0YTJi"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={css.link}
-          aria-label="Перейти до Telegram"
+          <Icon id="icon-youtube" fill="#E5E5E5" />
+        </IconsLink>
+
+        <IconsLink
+          link="https://www.facebook.com/IrynaIvanivnaHolovko"
+          alt="Facebook"
         >
-          <LiaTelegram className={css.icon} />
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UC7AHTcnBk-MZ5B7tTq81KpQ"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={css.link}
-          aria-label="Перейти до YouTube"
+          <Icon id="icon-facebook" fill="#E5E5E5" />
+        </IconsLink>
+
+        <IconsLink
+          link="https://www.linkedin.com/in/iryna-holovko-b5434b32a"
+          alt="linkedin"
         >
-          <FiYoutube className={css.icon} />
-        </a>
-        <a
-          href="https://www.facebook.com/IrynaIvanivnaHolovko"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={css.link}
-          aria-label="Перейти у Facebook"
+          <Icon id="icon-linkedin" fill="#E5E5E5" />
+        </IconsLink>
+
+        <IconsLink
+          link="https://radiologycenter.eu/doctors/golovkoirinaivanivna"
+          alt="мого сайту"
         >
-          <FaFacebookSquare className={css.icon} />
-        </a>
+          <Icon id="icon-website" fill="#E5E5E5" />
+        </IconsLink>
       </div>
     </div>
   );

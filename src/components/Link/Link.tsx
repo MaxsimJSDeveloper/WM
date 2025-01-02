@@ -1,17 +1,14 @@
 import styles from "./Link.module.css";
 
 interface linkProps {
-  link: string;
   title: string;
   subtitle: string;
 }
 
-const Link = ({ link, title, subtitle }: linkProps) => {
+const LinkItem = ({ title, subtitle }: linkProps) => {
   return (
-    <a
+    <div
       className={styles.link}
-      href={link}
-      target="_blank"
       rel="noopener noreferrer"
       aria-label={`${title} ${subtitle}`}
     >
@@ -19,8 +16,8 @@ const Link = ({ link, title, subtitle }: linkProps) => {
         {title}
         <p className={styles.text}>{subtitle}</p>
       </div>
-    </a>
+    </div>
   );
 };
 
-export default Link;
+export default LinkItem;

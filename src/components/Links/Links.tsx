@@ -1,44 +1,48 @@
 import { TbChecklist } from "react-icons/tb";
 import styles from "./Links.module.css";
-import { MdFace3 } from "react-icons/md";
-import Link from "../Link/Link";
+import Title from "../../shared/Title/Title";
+import Icon from "../../shared/Icon/Icon";
+import LinkItem from "../Link/Link";
+import IconsLink from "../../shared/IconsLink/IconsLink";
 
 const Links = () => {
   return (
     <section id="links" aria-labelledby="links-title">
-      <h2 id="links-title" className={styles.title}>
-        Посилання
-      </h2>
+      <Title>Посилання</Title>
+
       <ul className={styles.list}>
         <li className={styles.listItem}>
-          <div className={styles.info}>
+          <IconsLink
+            link="https://docs.google.com/forms/d/e/1FAIpQLScxMfOuDroT_ZT5xYwU_YaANrEH6FuhZQFoCT9YG-UMwIA09A/viewform"
+            withStyle
+          >
             <TbChecklist className={styles.icon} />
-            <Link
-              link="https://docs.google.com/forms/d/e/1FAIpQLScxMfOuDroT_ZT5xYwU_YaANrEH6FuhZQFoCT9YG-UMwIA09A/viewform"
-              title="Заповни анкету"
-              subtitle="Моя рука допомоги"
-            />
-          </div>
+            <LinkItem title="Запис" subtitle="на консультацію" />
+          </IconsLink>
         </li>
         <li className={styles.listItem}>
-          <div className={styles.info}>
-            <MdFace3 className={styles.icon} />
-            <Link
-              link="https://forms.gle/whQZko9yqWMk1tmeA"
-              title="ВАГІТНИМ"
-              subtitle="запис на безкоштовне заняття"
-            />
-          </div>
+          <IconsLink link="https://forms.gle/whQZko9yqWMk1tmeA" withStyle>
+            <Icon id="icon-pregnant" fill="#E5E5E5" width="48" height="48" />
+            <LinkItem title="Вагітним" subtitle="вступне заняття" />
+          </IconsLink>
         </li>
         <li className={styles.listItem}>
-          <div className={styles.info}>
-            <MdFace3 className={styles.icon} />
-            <Link
-              link="https://radiologycenter.eu/doctors/golovkoirinaivanivna"
-              title="Про мене"
-              subtitle="Досвід роботи та освіта"
-            />
-          </div>
+          <IconsLink
+            link="https://www.instagram.com/p/DEEkdSdNlqJ/?img_index=1"
+            withStyle
+          >
+            <Icon id="icon-help" fill="#E5E5E5" width="48" height="48" />
+            <LinkItem title="Моя допомога" subtitle="для тебе" />
+          </IconsLink>
+        </li>
+        <li className={styles.listItem}>
+          <IconsLink
+            link="https://www.instagram.com/dr_iryna_holovko/p/DD6S9SuNsEp/?img_index=1"
+            withStyle
+          >
+            <Icon id="icon-doctor" fill="#E5E5E5" width="48" height="48" />
+            <LinkItem title="Мій" subtitle="професійний шлях" />
+          </IconsLink>
         </li>
       </ul>
     </section>

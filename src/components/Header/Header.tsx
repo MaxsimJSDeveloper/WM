@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
 import logo from "../../img/logo.png";
 
 import Navigation from "../Navigation/Navigation";
 import Modal from "../Modal/Modal";
 import css from "./Header.module.css";
+import Icon from "../../shared/Icon/Icon";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768);
+  const [isScroll, setIsScrolled] = useState<boolean>(false);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
@@ -19,11 +20,23 @@ const Header = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className={`${!isMobile && css.header}`}>
-      {!isMobile && (
+    <header className={`${css.header} ${isScroll && css.whenScroll}`}>
+      <div className={css.logoWrap}>
         <img className={css.logo} src={logo} alt="логотип" width={50} />
-      )}
+        <p className={css.logoText}>WM</p>
+      </div>
+
       {isMobile ? (
         <>
           <button
@@ -31,17 +44,7 @@ const Header = () => {
             className={css.menuButton}
             onClick={handleOpen}
           >
-            <RxHamburgerMenu
-              style={{
-                width: 42,
-                height: 42,
-                color: "#fff",
-                backgroundColor: "#91bf65",
-                padding: 6,
-                borderRadius: 6,
-                position: "fixed",
-              }}
-            />
+            <Icon id="icon-burger" fill="#E5E5E5" />
           </button>
           <Modal isOpen={open} onClose={handleClose}>
             <Navigation onLinkClick={handleClose} />
