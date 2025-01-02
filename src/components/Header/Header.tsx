@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import logo from "../../img/logo.png";
 
 import Navigation from "../Navigation/Navigation";
 import Modal from "../Modal/Modal";
@@ -33,7 +32,6 @@ const Header = () => {
   return (
     <header className={`${css.header} ${isScroll && css.whenScroll}`}>
       <div className={css.logoWrap}>
-        <img className={css.logo} src={logo} alt="логотип" width={50} />
         <p className={css.logoText}>WM</p>
       </div>
 
