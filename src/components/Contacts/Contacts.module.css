@@ -10,10 +10,3 @@
   width: 335px;
   height: 50px;
 }
-
-.links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-}

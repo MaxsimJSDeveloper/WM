@@ -1,0 +1,21 @@
+.secondVariant {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  width: 130px;
+  height: 120px;
+  background: var(--card-color);
+}
+
+.text {
+  font-size: 14px;
+  text-align: center;
+}

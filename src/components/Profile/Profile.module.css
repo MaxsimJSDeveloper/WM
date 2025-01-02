@@ -16,5 +16,5 @@
 
 .username {
   margin-bottom: 5px;
-  color: #6c9247;
+  color: var(--card-color);
 }
