@@ -1,3 +1,40 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  background-color: var(--card-color);
+}
+
+.listItem:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+  height: 48px;
+  width: 48px;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
 .header {
   background-color: rgb(0, 121, 107);
   display: flex;
@@ -22,11 +59,21 @@
   align-items: center;
 }
 
+.logoWrap:hover {
+  transform: scale(1.1);
+}
+
 .logoText {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 32px;
   color: var(--content-color);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.logoText:hover {
+  color: #fff;
+  transform: scale(1.1);
 }
 
 .menuButton {

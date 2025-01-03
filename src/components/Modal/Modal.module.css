@@ -14,6 +14,7 @@
 .modalContent {
   max-width: 290px;
   padding: 20px;
+  padding-top: 40px;
   border-radius: 5px;
   position: relative;
   z-index: 1001;

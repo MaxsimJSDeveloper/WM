@@ -1,7 +1,7 @@
 .secondVariant {
   display: flex;
   justify-content: space-between;
-  max-width: 300px;
+  max-width: 340px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -10,9 +10,16 @@
   display: flex;
   align-items: center;
   border-radius: 12px;
-  width: 130px;
+  padding: 16px;
+  width: 150px;
   height: 120px;
-  background: var(--card-color);
+  background-color: var(--card-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .text {

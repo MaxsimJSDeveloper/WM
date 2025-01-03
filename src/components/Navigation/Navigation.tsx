@@ -18,11 +18,11 @@ const Navigation = ({ onLinkClick }: NavigationProps) => {
             Посилання
           </a>
         </li>
-        <li className={css.link}>
+        {/* <li className={css.link}>
           <a href="#" onClick={onLinkClick} aria-label="Підтримати проєкт">
             Підтримати проект
           </a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
