@@ -1,5 +1,3 @@
-import css from "./Navigation.module.css";
-
 interface NavigationProps {
   onLinkClick?: () => void;
 }
@@ -7,13 +5,13 @@ interface NavigationProps {
 const Navigation = ({ onLinkClick }: NavigationProps) => {
   return (
     <nav aria-label="Основне меню">
-      <ul className={css.navList}>
-        <li className={css.link}>
+      <ul className="md:flex md:gap-[24px] md:items-center md:justify-center">
+        <li className="text-center text-[#ededed] text-[24px] hover:text-white  mb-[24px] md:mb-0">
           <a href="#serv" onClick={onLinkClick}>
             Послуги
           </a>
         </li>
-        <li className={css.link}>
+        <li className="text-center text-[#ededed] text-[24px] hover:text-white">
           <a href="#links" onClick={onLinkClick}>
             Посилання
           </a>

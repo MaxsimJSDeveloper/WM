@@ -1,11 +1,10 @@
-import css from "./Services.module.css";
 import Title from "../../shared/Title/Title";
 import FirstVariant from "./FirstVariant/FirstVariant";
 import SecondVariant from "./SecondVariant/SecondVariant";
 
 const Services = () => {
   return (
-    <section className={css.container} id="serv">
+    <section className="pt-[24px] rounded-[12px] mb-[16px] w-[90%]" id="serv">
       <Title>Послуги</Title>
       <FirstVariant>
         Якісно підготую тебе до пологів і батьківства ‌(он-лайн курс з 11 тем).

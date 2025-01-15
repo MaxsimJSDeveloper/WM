@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import Navigation from "../Navigation/Navigation";
 import Modal from "../Modal/Modal";
-import css from "./Header.module.css";
+
 import Icon from "../../shared/Icon/Icon";
 
 const Header = () => {
@@ -30,18 +30,20 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`${css.header} ${isScroll && css.whenScroll}`}>
-      <div className={css.logoWrap}>
-        <p className={css.logoText}>WM</p>
+    <header
+      className={`z-50 bg-accent flex items-center justify-between py-3 px-6 mb-6 transition-all duration-300 ease-in-out ${
+        isScroll ? "fixed top-0 w-full shadow-md transform" : ""
+      }`}
+    >
+      <div className="flex items-center group">
+        <p className="font-secondFamily font-normal text-[32px] text-content transition-transform duration-300 transform group-hover:scale-110 group-hover:text-white">
+          WM
+        </p>
       </div>
 
       {isMobile ? (
         <>
-          <button
-            aria-label="Меню"
-            className={css.menuButton}
-            onClick={handleOpen}
-          >
+          <button aria-label="Меню" onClick={handleOpen}>
             <Icon id="icon-burger" fill="#E5E5E5" />
           </button>
           <Modal isOpen={open} onClose={handleClose}>

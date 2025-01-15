@@ -1,9 +1,9 @@
+// Footer.tsx
 import ContactsList from "../ContactsList/ContactsList";
-import css from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className={css.footer}>
+    <footer className="flex items-center justify-center mt-5 bg-accent shadow-xl h-20">
       <ContactsList />
     </footer>
   );

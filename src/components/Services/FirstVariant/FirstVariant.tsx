@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import css from "./FirstVariant.module.css";
 
 interface firstVariantProps {
   children: ReactNode;
@@ -7,8 +6,8 @@ interface firstVariantProps {
 
 const FirstVariant = ({ children }: firstVariantProps) => {
   return (
-    <div className={css.firstVariant}>
-      <p className={css.text}>{children}</p>
+    <div className="z-10 mb-5 flex items-center rounded-lg p-4 w-[270px] mx-auto h-[120px] bg-card transition-transform duration-300 shadow-sm hover:translate-y-[-5px] hover:scale-105 hover:shadow-lg">
+      <p className="text-center text-sm">{children}</p>
     </div>
   );
 };

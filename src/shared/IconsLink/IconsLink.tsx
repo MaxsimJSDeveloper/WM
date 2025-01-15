@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import css from "./IconsLink.module.css";
 
 interface Props {
   children: ReactNode;
@@ -11,7 +10,7 @@ interface Props {
 const IconsLink = ({ children, link, alt, withStyle }: Props) => {
   return (
     <a
-      className={`${withStyle && css.info}`}
+      className={`${withStyle && "flex flex-col items-center justify-center"}`}
       href={link}
       target="_blank"
       rel="noopener noreferrer"

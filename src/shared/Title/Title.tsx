@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import css from "./Title.module.css";
 
 interface TitleProps {
   children: ReactNode;
@@ -7,9 +6,9 @@ interface TitleProps {
 
 const Title = ({ children }: TitleProps) => {
   return (
-    <>
-      <h2 className={css.title}>{children}</h2>
-    </>
+    <h2 className="font-secondFamily font-medium text-[42px] text-accent text-center mb-4">
+      {children}
+    </h2>
   );
 };
 

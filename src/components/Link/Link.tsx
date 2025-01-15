@@ -1,5 +1,3 @@
-import styles from "./Link.module.css";
-
 interface linkProps {
   title: string;
   subtitle: string;
@@ -7,14 +5,10 @@ interface linkProps {
 
 const LinkItem = ({ title, subtitle }: linkProps) => {
   return (
-    <div
-      className={styles.link}
-      rel="noopener noreferrer"
-      aria-label={`${title} ${subtitle}`}
-    >
-      <div className={styles.cardInfo}>
+    <div rel="noopener noreferrer" aria-label={`${title} ${subtitle}`}>
+      <div className="flex justify-center items-center flex-col text-[18px]">
         {title}
-        <p className={styles.text}>{subtitle}</p>
+        <p className="text-[#d8d8d8] text-[14px]">{subtitle}</p>
       </div>
     </div>
   );

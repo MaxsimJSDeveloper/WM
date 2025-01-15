@@ -1,6 +1,5 @@
 import { ReactNode, useEffect } from "react";
 import ReactDOM from "react-dom";
-import css from "./Modal.module.css";
 import { IoMdClose } from "react-icons/io";
 
 interface ModalProps {
@@ -27,21 +26,24 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
 
   return ReactDOM.createPortal(
     <div
-      className={css.modalOverlay}
+      className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[1000]"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-title"
     >
-      <div className={css.modalContent} onClick={(e) => e.stopPropagation()}>
+      <div
+        className="max-w-[290px] p-[20px] pt-[40px] rounded-[5px] relative z-[1001] bg-accent"
+        onClick={(e) => e.stopPropagation()}
+      >
         <button
-          className={css.modalClose}
+          className="absolute top-[10px] right-[10px] bg-none border-none text-[24px]"
           onClick={onClose}
           aria-label="Закрити модальне вікно"
         >
-          <IoMdClose className={css.icon} />
+          <IoMdClose className="fill-[#fafafa]" />
         </button>
-        <h2 className="visuallyHidden">Заголовок модального окна</h2>
+        <h2 className="sr-only">Заголовок модального окна</h2>
         {children}
       </div>
     </div>,
