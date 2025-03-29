@@ -1,4 +1,3 @@
-// Contacts.tsx
 import ContactsList from "../ContactsList/ContactsList";
 
 const Contacts = () => {

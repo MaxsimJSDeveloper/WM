@@ -1,4 +1,3 @@
-// Footer.tsx
 import ContactsList from "../ContactsList/ContactsList";
 
 const Footer = () => {

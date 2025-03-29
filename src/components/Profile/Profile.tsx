@@ -5,7 +5,7 @@ import profile from "../../img/profile.png";
 
 const Profile = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <main className="flex flex-col items-center justify-center">
       <h1 className="text-center font-secondFamily font-bold text-[42px] leading-tight text-[#009688]">
         Ментор <br />
         твого материнства
@@ -22,7 +22,7 @@ const Profile = () => {
       <Contacts />
       <Services />
       <Links />
-    </div>
+    </main>
   );
 };
 

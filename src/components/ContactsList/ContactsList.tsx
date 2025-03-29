@@ -1,4 +1,3 @@
-// ContactsList.tsx
 import Icon from "../../shared/Icon/Icon";
 import IconsLink from "../../shared/IconsLink/IconsLink";
 
