@@ -36,9 +36,12 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center group">
-        <p className="font-secondFamily font-normal text-[32px] text-content transition-transform duration-300 transform group-hover:scale-110 group-hover:text-white">
+        <a
+          href=""
+          className="font-secondFamily font-normal text-[32px] text-content transition-transform duration-300 transform group-hover:scale-110 group-hover:text-white"
+        >
           WM
-        </p>
+        </a>
       </div>
 
       {isMobile ? (

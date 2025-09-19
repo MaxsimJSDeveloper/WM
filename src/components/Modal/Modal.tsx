@@ -1,6 +1,6 @@
 import { ReactNode, useEffect } from "react";
 import ReactDOM from "react-dom";
-import { IoMdClose } from "react-icons/io";
+import Icon from "../../shared/Icon/Icon";
 
 interface ModalProps {
   isOpen: boolean;
@@ -41,7 +41,7 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
           onClick={onClose}
           aria-label="Закрити модальне вікно"
         >
-          <IoMdClose className="fill-[#fafafa]" />
+          <Icon id="icon-close" fill="#fafafa" width="20" height="20" />
         </button>
         <h2 className="sr-only">Заголовок модального окна</h2>
         {children}
